@@ -85,7 +85,7 @@ class PageTitle extends StatelessWidget {
                                     Color.fromARGB(255, 3, 42, 77),
                                   ],
                                 ),
-                                borderRadius: BorderRadius.circular(80),
+                                borderRadius: BorderRadius.circular(30),
                                 boxShadow: const [
                                   BoxShadow(
                                     color: Colors.black12,
@@ -164,7 +164,7 @@ class PageTitle extends StatelessWidget {
                                       Color.fromARGB(255, 3, 42, 77),
                                     ],
                                   ),
-                                  borderRadius: BorderRadius.circular(80),
+                                  borderRadius: BorderRadius.circular(30),
                                   boxShadow: const [
                                     BoxShadow(
                                       color: Colors.black12,
@@ -194,7 +194,7 @@ class PageTitle extends StatelessWidget {
                                   Color.fromARGB(255, 3, 42, 77),
                                 ],
                               ),
-                              borderRadius: BorderRadius.circular(80),
+                              borderRadius: BorderRadius.circular(30),
                               boxShadow: const [
                                 BoxShadow(
                                   color: Colors.black12,
