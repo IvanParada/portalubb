@@ -1,10 +1,12 @@
+import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
+import 'package:portalubb/widgets/widgets.dart';
 
-class AppSelected extends StatelessWidget {
-  const AppSelected({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text('Hola');
+void openApp(String packageName, BuildContext context) async {
+  bool isInstalled = await DeviceApps.isAppInstalled(packageName);
+  if (isInstalled) {
+    DeviceApps.openApp(packageName);
+  } else {
+  openAppOnPlayStore(packageName);
   }
 }

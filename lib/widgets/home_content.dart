@@ -33,7 +33,7 @@ class PageTitle extends StatelessWidget {
             FadeInLeft(
               child: const Center(
                 child: Text(
-                  'Explora las distintas aplicaciones universitarias disponibles.',
+                  'Aplicaciones universitarias disponibles.',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,
@@ -53,30 +53,157 @@ class PageTitle extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 40),
             Center(
+                child: SingleChildScrollView(
               child: Container(
-                width: size.width * 0.8,
-                height: size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.white,
                   borderRadius: BorderRadius.circular(30),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black12,
-                      blurRadius: 15,
-                      offset: Offset(0, 5),
-                    ),
-                  ],
+                  color: Colors.white,
                 ),
-                child: const AppSelected(),
+                width: size.width * 0.8,
+                height: size.height * 0.6,
+                padding: const EdgeInsets.all(
+                    20), // Espaciado entre los contenedores
+
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          GestureDetector(
+                            onTap: () => openApp('com.example.ubb', context),
+                            child: Container(
+                              width: size.width * 0.3,
+                              height: size.width * 0.3,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(30),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black12,
+                                    blurRadius: 5,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                              child: const Icon(Icons.access_alarm_rounded),
+                            ),
+                          ),
+                          Container(
+                            width: size.width * 0.3,
+                            height: size.width * 0.3,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(30),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black12,
+                                  blurRadius: 5,
+                                  offset: Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: const Icon(Icons.ac_unit_sharp),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 30), // Espaciado entre filas
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: size.width * 0.3,
+                            height: size.width * 0.3,
+                            decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(30),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black12,
+                                  blurRadius: 5,
+                                  offset: Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: const Icon(Icons.account_balance),
+                          ),
+                          const SizedBox(height: 30), // Espaciado entre filas
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                width: size.width * 0.3,
+                                height: size.width * 0.3,
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  borderRadius: BorderRadius.circular(30),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      color: Colors.black12,
+                                      blurRadius: 5,
+                                      offset: Offset(0, 2),
+                                    ),
+                                  ],
+                                ),
+                                child: const Icon(Icons.g_translate_sharp),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 30), // Espaciado entre filas
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: size.width * 0.3,
+                            height: size.width * 0.3,
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(30),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black12,
+                                  blurRadius: 5,
+                                  offset: Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: const Icon(Icons.face),
+                          ),
+                          const SizedBox(height: 30), // Espaciado entre filas
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                width: size.width * 0.3,
+                                height: size.width * 0.3,
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                  borderRadius: BorderRadius.circular(30),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      color: Colors.black12,
+                                      blurRadius: 5,
+                                      offset: Offset(0, 2),
+                                    ),
+                                  ],
+                                ),
+                                child: const Icon(Icons.dangerous),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      
+                    ]),
               ),
-            ),
+            ))
           ],
         ),
       ),
     );
   }
 }
-
-

@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       title: 'PortalUBB',
       initialRoute: 'home_screen',
       routes: {
-        'home_screen': (_) => const HomeScreen(),
+        'home_screen': (context) => const HomeScreen(),
       },
     );
   }
