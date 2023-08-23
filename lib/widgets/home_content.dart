@@ -75,10 +75,41 @@ class PageTitle extends StatelessWidget {
                           GestureDetector(
                             onTap: () => openApp('com.example.ubb', context),
                             child: Container(
+                              padding: const EdgeInsets.all(20),
                               width: size.width * 0.3,
                               height: size.width * 0.3,
                               decoration: BoxDecoration(
-                                color: Colors.blue,
+                                gradient: const RadialGradient(
+                                  colors: [
+                                    Color.fromARGB(255, 9, 27, 43),
+                                    Color.fromARGB(255, 3, 42, 77),
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(80),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black12,
+                                    blurRadius: 5,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                              child: Image.asset('assets/logo_ubbmap.png'),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () => openApp('com.diubb.yosoyubb', context),
+                            child: Container(
+                              padding: const EdgeInsets.all(20),
+                              width: size.width * 0.3,
+                              height: size.width * 0.3,
+                              decoration: BoxDecoration(
+                                gradient: const RadialGradient(
+                                  colors: [
+                                    Color.fromARGB(255, 9, 27, 43),
+                                    Color.fromARGB(255, 3, 42, 77),
+                                  ],
+                                ),
                                 borderRadius: BorderRadius.circular(30),
                                 boxShadow: const [
                                   BoxShadow(
@@ -88,28 +119,12 @@ class PageTitle extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              child: const Icon(Icons.access_alarm_rounded),
+                              child: Image.asset('assets/logo_yosoyubb.png'),
                             ),
-                          ),
-                          Container(
-                            width: size.width * 0.3,
-                            height: size.width * 0.3,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(30),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Colors.black12,
-                                  blurRadius: 5,
-                                  offset: Offset(0, 2),
-                                ),
-                              ],
-                            ),
-                            child: const Icon(Icons.ac_unit_sharp),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 30), // Espaciado entre filas
+                      const SizedBox(height: 30),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -117,7 +132,12 @@ class PageTitle extends StatelessWidget {
                             width: size.width * 0.3,
                             height: size.width * 0.3,
                             decoration: BoxDecoration(
-                              color: Colors.amber,
+                              gradient: const RadialGradient(
+                                colors: [
+                                  Color.fromARGB(255, 9, 27, 43),
+                                  Color.fromARGB(255, 3, 42, 77),
+                                ],
+                              ),
                               borderRadius: BorderRadius.circular(30),
                               boxShadow: const [
                                 BoxShadow(
@@ -127,9 +147,10 @@ class PageTitle extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            child: const Icon(Icons.account_balance),
+                            child: const Icon(Icons.account_balance,
+                                color: Colors.white),
                           ),
-                          const SizedBox(height: 30), // Espaciado entre filas
+                          const SizedBox(height: 30),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -137,8 +158,13 @@ class PageTitle extends StatelessWidget {
                                 width: size.width * 0.3,
                                 height: size.width * 0.3,
                                 decoration: BoxDecoration(
-                                  color: Colors.blueGrey,
-                                  borderRadius: BorderRadius.circular(30),
+                                  gradient: const RadialGradient(
+                                    colors: [
+                                      Color.fromARGB(255, 9, 27, 43),
+                                      Color.fromARGB(255, 3, 42, 77),
+                                    ],
+                                  ),
+                                  borderRadius: BorderRadius.circular(80),
                                   boxShadow: const [
                                     BoxShadow(
                                       color: Colors.black12,
@@ -147,7 +173,8 @@ class PageTitle extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                child: const Icon(Icons.g_translate_sharp),
+                                child: const Icon(Icons.g_translate_sharp,
+                                    color: Colors.white),
                               ),
                             ],
                           ),
@@ -161,8 +188,13 @@ class PageTitle extends StatelessWidget {
                             width: size.width * 0.3,
                             height: size.width * 0.3,
                             decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(30),
+                              gradient: const RadialGradient(
+                                colors: [
+                                  Color.fromARGB(255, 9, 27, 43),
+                                  Color.fromARGB(255, 3, 42, 77),
+                                ],
+                              ),
+                              borderRadius: BorderRadius.circular(80),
                               boxShadow: const [
                                 BoxShadow(
                                   color: Colors.black12,
@@ -171,9 +203,12 @@ class PageTitle extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            child: const Icon(Icons.face),
+                            child: const Icon(
+                              Icons.face,
+                              color: Colors.white,
+                            ),
                           ),
-                          const SizedBox(height: 30), // Espaciado entre filas
+                          const SizedBox(height: 30),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -181,7 +216,12 @@ class PageTitle extends StatelessWidget {
                                 width: size.width * 0.3,
                                 height: size.width * 0.3,
                                 decoration: BoxDecoration(
-                                  color: Colors.pink,
+                                  gradient: const RadialGradient(
+                                    colors: [
+                                      Color.fromARGB(255, 9, 27, 43),
+                                      Color.fromARGB(255, 3, 42, 77),
+                                    ],
+                                  ),
                                   borderRadius: BorderRadius.circular(30),
                                   boxShadow: const [
                                     BoxShadow(
@@ -191,13 +231,13 @@ class PageTitle extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                child: const Icon(Icons.dangerous),
+                                child: const Icon(Icons.dangerous,
+                                    color: Colors.white),
                               ),
                             ],
                           ),
                         ],
                       ),
-                      
                     ]),
               ),
             ))
