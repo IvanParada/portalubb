@@ -62,10 +62,8 @@ class PageTitle extends StatelessWidget {
                   color: Colors.white,
                 ),
                 width: size.width * 0.8,
-                height: size.height * 0.6,
-                padding: const EdgeInsets.all(
-                    20), // Espaciado entre los contenedores
-
+                height: size.height * 0.55,
+                padding: const EdgeInsets.all(20),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -124,7 +122,7 @@ class PageTitle extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -150,7 +148,6 @@ class PageTitle extends StatelessWidget {
                             child: const Icon(Icons.account_balance,
                                 color: Colors.white),
                           ),
-                          const SizedBox(height: 30),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -180,7 +177,7 @@ class PageTitle extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 30), // Espaciado entre filas
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
