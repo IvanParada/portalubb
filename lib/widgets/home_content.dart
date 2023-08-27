@@ -68,7 +68,7 @@ class PageTitle extends StatelessWidget {
             Center(
               child: BounceInUp(
                 child: Swiper(
-                  autoplay: true,
+                  autoplay: false,
                   itemCount: appPackageNames.length,
                   layout: SwiperLayout.STACK,
                   itemWidth: size.width * 0.7,
