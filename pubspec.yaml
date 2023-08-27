@@ -12,10 +12,9 @@ dependencies:
   animate_do: ^3.0.2
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.2
   url_launcher: ^6.1.12
-
+  card_swiper: ^3.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

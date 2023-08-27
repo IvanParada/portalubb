@@ -1,6 +1,17 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:portalubb/widgets/widgets.dart';
+import 'package:card_swiper/card_swiper.dart';
+
+final List<String> appPackageNames = [
+  'com.example.ubb',
+  'com.diubb.yosoyubb',
+];
+
+final Map<String, String> appImages = {
+  'com.example.ubb': 'assets/logo_ubbmap.png',
+  'com.diubb.yosoyubb': 'assets/logo_yosoyubb.png',
+};
 
 class PageTitle extends StatelessWidget {
   const PageTitle({super.key});
@@ -53,194 +64,56 @@ class PageTitle extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 60),
             Center(
-                child: SingleChildScrollView(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: Colors.white,
-                ),
-                width: size.width * 0.8,
-                height: size.height * 0.6,
-                padding: const EdgeInsets.all(
-                    20), // Espaciado entre los contenedores
+              child: BounceInUp(
+                child: Swiper(
+                  autoplay: true,
+                  itemCount: appPackageNames.length,
+                  layout: SwiperLayout.STACK,
+                  itemWidth: size.width * 0.7,
+                  itemHeight: size.height * 0.5,
+                  itemBuilder: (BuildContext context, int index) {
+                    final packageName = appPackageNames[index];
+                    final appImage = appImages[packageName];
 
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () => openApp('com.example.ubb', context),
-                            child: Container(
-                              padding: const EdgeInsets.all(20),
-                              width: size.width * 0.3,
-                              height: size.width * 0.3,
-                              decoration: BoxDecoration(
-                                gradient: const RadialGradient(
-                                  colors: [
-                                    Color.fromARGB(255, 9, 27, 43),
-                                    Color.fromARGB(255, 3, 42, 77),
-                                  ],
-                                ),
-                                borderRadius: BorderRadius.circular(30),
-                                boxShadow: const [
-                                  BoxShadow(
-                                    color: Colors.black12,
-                                    blurRadius: 5,
-                                    offset: Offset(0, 2),
-                                  ),
-                                ],
-                              ),
-                              child: Image.asset('assets/logo_ubbmap.png'),
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () => openApp('com.diubb.yosoyubb', context),
-                            child: Container(
-                              padding: const EdgeInsets.all(20),
-                              width: size.width * 0.3,
-                              height: size.width * 0.3,
-                              decoration: BoxDecoration(
-                                gradient: const RadialGradient(
-                                  colors: [
-                                    Color.fromARGB(255, 9, 27, 43),
-                                    Color.fromARGB(255, 3, 42, 77),
-                                  ],
-                                ),
-                                borderRadius: BorderRadius.circular(30),
-                                boxShadow: const [
-                                  BoxShadow(
-                                    color: Colors.black12,
-                                    blurRadius: 5,
-                                    offset: Offset(0, 2),
-                                  ),
-                                ],
-                              ),
-                              child: Image.asset('assets/logo_yosoyubb.png'),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 30),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            width: size.width * 0.3,
-                            height: size.width * 0.3,
-                            decoration: BoxDecoration(
-                              gradient: const RadialGradient(
-                                colors: [
-                                  Color.fromARGB(255, 9, 27, 43),
-                                  Color.fromARGB(255, 3, 42, 77),
-                                ],
-                              ),
-                              borderRadius: BorderRadius.circular(30),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Colors.black12,
-                                  blurRadius: 5,
-                                  offset: Offset(0, 2),
-                                ),
-                              ],
-                            ),
-                            child: const Icon(Icons.account_balance,
-                                color: Colors.white),
-                          ),
-                          const SizedBox(height: 30),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                width: size.width * 0.3,
-                                height: size.width * 0.3,
-                                decoration: BoxDecoration(
-                                  gradient: const RadialGradient(
-                                    colors: [
-                                      Color.fromARGB(255, 9, 27, 43),
-                                      Color.fromARGB(255, 3, 42, 77),
-                                    ],
-                                  ),
-                                  borderRadius: BorderRadius.circular(30),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Colors.black12,
-                                      blurRadius: 5,
-                                      offset: Offset(0, 2),
-                                    ),
-                                  ],
-                                ),
-                                child: const Icon(Icons.g_translate_sharp,
-                                    color: Colors.white),
-                              ),
+                    return GestureDetector(
+                      onTap: () => openApp(packageName, context),
+                      child: Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          gradient: const RadialGradient(
+                            colors: [
+                              Color.fromARGB(255, 9, 27, 43),
+                              Color.fromARGB(255, 3, 42, 77),
                             ],
                           ),
-                        ],
-                      ),
-                      const SizedBox(height: 30), // Espaciado entre filas
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            width: size.width * 0.3,
-                            height: size.width * 0.3,
-                            decoration: BoxDecoration(
-                              gradient: const RadialGradient(
-                                colors: [
-                                  Color.fromARGB(255, 9, 27, 43),
-                                  Color.fromARGB(255, 3, 42, 77),
-                                ],
-                              ),
-                              borderRadius: BorderRadius.circular(30),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Colors.black12,
-                                  blurRadius: 5,
-                                  offset: Offset(0, 2),
-                                ),
-                              ],
+                          borderRadius: BorderRadius.circular(30),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 5,
+                              offset: Offset(0, 2),
                             ),
-                            child: const Icon(
-                              Icons.face,
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(height: 30),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                width: size.width * 0.3,
-                                height: size.width * 0.3,
-                                decoration: BoxDecoration(
-                                  gradient: const RadialGradient(
-                                    colors: [
-                                      Color.fromARGB(255, 9, 27, 43),
-                                      Color.fromARGB(255, 3, 42, 77),
-                                    ],
-                                  ),
-                                  borderRadius: BorderRadius.circular(30),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Colors.black12,
-                                      blurRadius: 5,
-                                      offset: Offset(0, 2),
-                                    ),
-                                  ],
-                                ),
-                                child: const Icon(Icons.dangerous,
-                                    color: Colors.white),
+                          ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            if (appImage != null)
+                              Image.asset(
+                                appImage,
+                                width: size.width * 0.4,
+                                height: size.height * 0.3,
                               ),
-                            ],
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ]),
+                    );
+                  },
+                ),
               ),
-            ))
+            )
           ],
         ),
       ),
