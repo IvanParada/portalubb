@@ -1,6 +1,6 @@
 # portalubb
 
-A new Flutter project.
+Aplicación tipo Launcher, para abrir distintas apps a través de su packageName
 
 ## Getting Started
 
