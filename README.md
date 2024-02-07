@@ -13,17 +13,17 @@ Esta aplicación para Android se ha desarrollado con el objetivo de mejorar la a
 ## ✔️ Tecnologías usadas<a name="tec-util"></a>
 
 * <b>Lenguaje de programación:</b>
-  * Dart
+  * ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 
 * <b>Frameworks y bibliotecas:</b>
-  * Flutter
+  * ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
     
 * <b>Control de versiones:</b>
-  * Git
+  * ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
     
 * <b>Herramientas de desarrollo:</b>
-  * Visual Studio Code
-  * Android Studio
+  * ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+  * ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
     
 
 ## 💻 Características<a name="caract"></a>
