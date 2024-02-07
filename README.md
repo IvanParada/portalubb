@@ -29,7 +29,11 @@ Esta es una sencilla aplicación desarrollada para el sistema operativo Android 
 ## 💻 Características<a name="caract"></a>
 
 ### 1. Reedireccionamiento a la aplicación
-- Permite a los usuarios abrir las aplicaciones correspondientes a la Universidad del Bío-Bío en caso de estar instalada, al contrario reedirige a la página de descarga en Google Play.
+- Esta función permite a los usuarios abrir las aplicaciones correspondientes a la Universidad del Bío-Bío en sus dispositivos móviles. Si la aplicación correspondiente está instalada, el usuario será redirigido automáticamente a ella. En caso contrario, se redirigirá al usuario a la página de descarga de la aplicación en Google Play.
+
+Este comportamiento se logra mediante la identificación del paquete de la aplicación (packageName) en el dispositivo del usuario. Si el paquete de la aplicación está presente, se abre directamente la aplicación. De lo contrario, se proporciona un enlace para descargar la aplicación desde Google Play Store.
+
+Esta función proporciona una experiencia fluida para los usuarios al garantizar que puedan acceder fácilmente a las aplicaciones de la Universidad del Bío-Bío, ya sea que esté instalada en su dispositivo o no.
 
 
 ## 🚦 Dirigiendo el proyecto<a name="instrucciones"></a>
