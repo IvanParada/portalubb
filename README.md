@@ -8,7 +8,7 @@
 * [Dirigiendo el proyecto](#instrucciones)
 * [Demostración](#img)
 ## 📋 Descripción<a name="descripcion"></a>
-Esta es una sencilla aplicación desarrollada para el sistema operativo Android que busca una manera de proporcionar accesibilidad para ingresar a las variadas aplicaciones móviles existentes de la Universidad del Bío-Bío.
+Esta aplicación para Android se ha desarrollado con el objetivo de mejorar la accesibilidad a las diversas aplicaciones móviles ofrecidas por la Universidad del Bío-Bío. Ofrece una solución sencilla para acceder fácilmente a estas aplicaciones desde un único punto de acceso.
 
 ## ✔️ Tecnologías usadas<a name="tec-util"></a>
 
@@ -29,7 +29,7 @@ Esta es una sencilla aplicación desarrollada para el sistema operativo Android 
 ## 💻 Características<a name="caract"></a>
 
 ### 1. Reedireccionamiento a la aplicación
-- Esta función permite a los usuarios abrir las aplicaciones correspondientes a la Universidad del Bío-Bío en sus dispositivos móviles. Si la aplicación correspondiente está instalada, el usuario será redirigido automáticamente a ella. En caso contrario, se redirigirá al usuario a la página de descarga de la aplicación en Google Play.
+Esta función permite a los usuarios abrir las aplicaciones correspondientes a la Universidad del Bío-Bío en sus dispositivos móviles. Si la aplicación correspondiente está instalada, el usuario será redirigido automáticamente a ella. En caso contrario, se redirigirá al usuario a la página de descarga de la aplicación en Google Play.
 
 Este comportamiento se logra mediante la identificación del paquete de la aplicación (packageName) en el dispositivo del usuario. Si el paquete de la aplicación está presente, se abre directamente la aplicación. De lo contrario, se proporciona un enlace para descargar la aplicación desde Google Play Store.
 
