@@ -1,16 +1,72 @@
-# portalubb
+<h1 align="center"> PortalUBB  </h1>
 
-Aplicación tipo Launcher, para abrir distintas apps a través de su packageName
 
-## Getting Started
+**Tabla de contenido**   
+* [Descripción](#descripcion)
+* [Tecnologías utilizadas](#tec-util)
+* [Caracteristicas](#caract)
+* [Dirigiendo el proyecto](#instrucciones)
+* [Demostración](#img)
+## 📋 Descripción<a name="descripcion"></a>
+Esta es una sencilla aplicación desarrollada para el sistema operativo Android que busca una manera de proporcionar accesibilidad para ingresar a las variadas aplicaciones móviles existentes de la Universidad del Bío-Bío.
 
-This project is a starting point for a Flutter application.
+## ✔️ Tecnologías usadas<a name="tec-util"></a>
 
-A few resources to get you started if this is your first Flutter project:
+* <b>Lenguaje de programación:</b>
+  * Dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* <b>Frameworks y bibliotecas:</b>
+  * Flutter
+    
+* <b>Control de versiones:</b>
+  * Git
+    
+* <b>Herramientas de desarrollo:</b>
+  * Visual Studio Code
+  * Android Studio
+    
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 💻 Características<a name="caract"></a>
+
+### 1. Reedireccionamiento a la aplicación
+- Permite a los usuarios abrir las aplicaciones correspondientes a la Universidad del Bío-Bío en caso de estar instalada, al contrario reedirige a la página de descarga en Google Play.
+
+
+## 🚦 Dirigiendo el proyecto<a name="instrucciones"></a>
+
+### Requisitos previos
+
+Antes de comenzar con la instalación y ejecución del proyecto, asegúrate de tener los siguientes requisitos previos:
+
+1. **Flutter SDK:** Es necesario tener Flutter SDK instalado en tu sistema. Puedes seguir las instrucciones de instalación en la [documentación oficial de Flutter](https://flutter.dev/docs/get-started/install).
+
+2. **Editor de código:** Se recomienda tener un editor de código instalado y configurado para trabajar con Flutter. Algunas opciones populares incluyen:
+   - [Visual Studio Code](https://code.visualstudio.com/)
+   - [Android Studio](https://developer.android.com/studio) (con el complemento Flutter)
+   - [IntelliJ IDEA](https://www.jetbrains.com/idea/) (con el complemento Flutter)
+
+3. **Dispositivo móvil o Emulador:** Necesitarás un dispositivo móvil con modo de depuración USB activado o un emulador Android configurado y funcionando en tu sistema. Puedes seguir las instrucciones para configurar un emulador en la [documentación de Flutter](https://flutter.dev/docs/get-started/install/windows#set-up-the-android-emulator).
+
+4. **Conexión a Internet:** Asegúrate de tener una conexión a Internet activa para descargar las dependencias del proyecto y cualquier actualización necesaria durante el proceso de instalación.
+
+5. **Clonar el repositorio:** Clona el repositorio de GitHub del proyecto utilizando Git. Puedes ejecutar el siguiente comando en tu terminal:
+<br>`git clone https://github.com/IvanParada/flutter_movieApp.git`
+
+6. **Instalar dependencias:** Después de clonar el repositorio, instala las dependencias del proyecto utilizando el administrador de paquetes de Dart, <b>pub</b>. Puedes ejecutar el siguiente comando en el directorio raíz del proyecto:
+<br>`flutter pub get`
+
+7. **Ejecutar el proyecto:** Una vez instaladas las dependencias, puedes ejecutar el proyecto en un emulador o dispositivo físico utilizando el siguiente comando:
+<br>`flutter run`
+
+
+Asegúrate de cumplir con todos estos requisitos previos antes de proceder con la instalación y ejecución del proyecto. Si encuentras algún problema durante el proceso, consulta la documentación oficial de Flutter o busca ayuda en la comunidad de desarrollo de Flutter.
+
+
+## 📱 Demostración<a name="img"></a>
+
+📱<b>Screens App</b>
+<div style="display:flex;">
+    <img src="https://github.com/IvanParada/portalubb/assets/118088453/1423c3c1-c662-4718-a280-21053076abb5" alt="Inicio" style="width:200px; margin-right:10px;">
+    <img src="https://github.com/IvanParada/portalubb/assets/118088453/2738259f-1f9e-4d58-ae91-20ba17dc46e0" alt="Categorias" style="width:200px; margin-right:10px;">
+</div>
+
